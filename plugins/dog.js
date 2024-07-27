@@ -71,7 +71,7 @@ const {
           let res = await fetch('https://random.dog/woof.json')
           let json = await res.json()
           if (json.status) return await m.reply("*Request Denied!*")
-          m.bot.sendFileUrl(m.jid, json.url,"", m, {author: "Suhail-Md" },"video");
+          m.bot.sendFileUrl(m.jid, json.url,"", m, {author: "Amit" },"video");
       
       }catch(e){ m.error(`${e}\n\nCommand: dog`,e,false)}
       })
